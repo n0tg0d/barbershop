@@ -41,7 +41,6 @@ class AppointmentForm extends Component
 
     public function submitAppointment()
     {
-        // dd('Appointment submitted successfully');
         $validatedData = $this->validate([
             'full_name' => 'required|string|max:255',
             'email' => 'nullable|email|max:255',
